@@ -1,0 +1,7 @@
+{
+  "name": "wish-site-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Optional helpers for wish-site. `npm install` enables photo resizing.",
+  "optionalDependencies": { "sharp": "^0.33.5" }
+}
