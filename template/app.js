@@ -28,6 +28,13 @@ const C = {
   letter: U.letter || 'Wishing you the happiest day. 💜',
   text: Object.assign({}, D_TEXT, U.text || {})
 };
+/* Optional URL overrides, handy for demos:  ?theme=mint&character=bunny&number=30  (validated, name/text can't be injected) */
+(function urlOverrides() {
+  const q = new URLSearchParams(location.search);
+  if (window.THEME_PRESETS.includes(q.get('theme'))) C.theme = q.get('theme');
+  if (['cat', 'bunny', 'bear', 'none'].includes(q.get('character'))) C.character = q.get('character');
+  if (/^\d{1,3}$/.test(q.get('number') || '')) C.number = q.get('number');
+})();
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const rnd = (a, b) => a + Math.random() * (b - a);

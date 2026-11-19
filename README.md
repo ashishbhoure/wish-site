@@ -14,6 +14,8 @@ your own messages. No framework, no build step, free to host.
 - 🌌 **3D photo world** — drag to look around, pinch to zoom, tap a photo to enlarge (three.js)
 - 🎨 7 themes (+ your own two colours) · 🐱🐰🐻 characters · every word editable (any language)
 
+**Live demo:** https://ashishbhoure.github.io/wish-site-demo/ · [mint + bunny](https://ashishbhoure.github.io/wish-site-demo/?theme=mint&character=bunny) · [sunshine + bear](https://ashishbhoure.github.io/wish-site-demo/?theme=sunshine&character=bear) · [peach + cat](https://ashishbhoure.github.io/wish-site-demo/?theme=peach)
+
 ## Use it with Claude Code (recommended)
 
 ```bash
@@ -47,6 +49,8 @@ character: "bunny",                       // cat bunny bear none
 wishes: ["You make ordinary days special 🌷", "…"],
 text: { galleryTitle: "Yaadon ki gali", … }            // translate every label
 ```
+
+Preview any theme/character without editing: add `?theme=berry&character=bear&number=30` to the URL.
 
 ## Add a theme or character
 
